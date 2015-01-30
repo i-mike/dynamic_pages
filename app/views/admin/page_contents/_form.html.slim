@@ -1,0 +1,10 @@
+.row
+  .col-md-10
+    = simple_form_for([:admin, @page_content.page, @page_content]) do |f|
+      = f.error_notification
+
+      = f.input :title
+      = f.input :body, as: :text, input_html: { rows: 10 }
+      = f.association :language, label_method: :slug, value_method: :id, include_blank: false
+
+      = f.button :submit

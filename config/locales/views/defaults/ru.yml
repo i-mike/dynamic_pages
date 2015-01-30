@@ -1,0 +1,18 @@
+ru:
+  "true": Да
+  "false": Нет
+
+  logout: Выход
+  show: Показать
+  edit: Редактировать
+  save: Сохранить
+  delete: Удалить
+
+  header_text: |+
+    Разработка мобильных приложений
+    для платформ iPhone, iPad и Android
+
+  helpers:
+    submit:
+      create: "Создать"
+      update: "Сохранить"

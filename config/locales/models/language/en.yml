@@ -1,0 +1,8 @@
+en:
+  activerecord:
+    models:
+      language: Language
+    attributes:
+      language:
+        slug: Slug
+        name: Name

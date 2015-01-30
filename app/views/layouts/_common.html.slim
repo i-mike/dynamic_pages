@@ -1,0 +1,26 @@
+.container-fluid
+  .row
+    .col-md-12.main
+      header
+        .row
+          .col-md-12
+            .language-selector.pull-right
+              = language_selector
+        .row
+          .col-md-4
+            = link_to image_tag('logo.png'), '/'
+
+            .header-text = t("header_text")
+          .col-md-3.col-md-offset-4.contacts
+            .phones.pull-right
+              span
+                ' +7 (499)
+                span.phone-main 403-16-04
+              br
+              span
+                ' +38 (044)
+                span.phone-main 238-25-84
+              br
+              = mail_to 'info@asdcode.com'
+= yield
+/= yield

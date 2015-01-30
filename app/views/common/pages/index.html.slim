@@ -1,0 +1,11 @@
+/.navbar.navbar-default.navbar-inverse
+/  .container-fluid
+/    .collapse.navbar-collapse
+/    ul.nav.navbar-nav
+/      - @pages.each do |page|
+/        li
+/          = link_to page.localized_content(params[:locale]).title, page
+/          /= link_to page.id, page
+/
+/.container
+/  = render partial: @pages, spacer_template: 'spacer'

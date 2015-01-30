@@ -1,0 +1,35 @@
+- present @page, Admin::PagePresenter do |page_presenter|
+  .panel.panel-default
+    .panel-body
+      .row
+        .col-md-5
+          table.table
+            tbody
+              tr
+                td
+                  strong
+                    = t("activerecord.attributes.page.slug")
+                td
+                  = @page.slug
+              tr
+                td
+                  strong = t("activerecord.attributes.page.priority")
+                td
+                  = @page.priority
+              tr
+                td
+                  strong = t("activerecord.attributes.page.enabled")
+                td
+                  = t @page.enabled.to_s
+              tr
+                td
+                  strong = t("activerecord.models.language")
+                td
+                  = page_presenter.contents_links(@page_contents)
+
+
+      .page-menu
+        = link_to t("edit"), edit_admin_page_path(@page), class: "btn btn-primary"
+        = link_to t("page.add_localization"), new_admin_page_page_content_path(@page), class: "btn btn-primary"
+        /= link_to "Добавить подстраницу", new_page_path(parent: "#{@page.slug}"), class: "btn btn-primary"
+        = link_to t("page.add_subpage"), new_admin_page_path(parent_id: @page.id), class: "btn btn-primary"

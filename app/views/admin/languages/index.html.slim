@@ -1,0 +1,14 @@
+h3 = t("language.available_languages")
+
+table.table
+  tbody
+    - @languages.each do |language|
+      tr
+        td
+          strong = language.slug
+        td
+          = link_to t("edit"), edit_admin_language_path(language)
+          '  |
+          = link_to t("delete"), admin_language_path(language), data: {:confirm => 'Вы уверены?'}, :method => :delete
+
+= link_to t("language.add_language"), new_admin_language_path, class: 'btn btn-primary'

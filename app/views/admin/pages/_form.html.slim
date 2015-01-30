@@ -1,0 +1,19 @@
+.row
+  .col-md-8
+    = simple_form_for([:admin, @page]) do |f|
+      = f.error_notification
+
+      = f.association :parent do
+        = f.label :parent
+        = f.select :parent_id, pages_options_for_select(@page), { include_blank: true }, { class: 'page-select' }
+        /= f.select :parent_id, pages_options_for_select(@page), { include_blank: true }, { id: 'pages-select', style: "width: 450px;" }
+        /select(name="page[parent_id]" style="display: none;" )
+        /.form-group
+        /  select.page-select(name="page[parent_id]")
+
+      = f.input :slug
+      /TODO: add ranges for priority
+      = f.input :priority, input_html: { min: 1 }
+      = f.input :enabled
+
+      = f.button :submit

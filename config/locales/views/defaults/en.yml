@@ -1,0 +1,18 @@
+en:
+  "true": "Yes"
+  "false": "No"
+
+  logout: Log Out
+  show: Show
+  edit: Edit
+  save: Save
+  delete: Delete
+
+  header_text: |+
+    Mobile application development
+    for iPhone, iPad, Android
+
+  helpers:
+    submit:
+      create: "Create"
+      update: "Update"

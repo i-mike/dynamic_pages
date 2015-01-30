@@ -1,0 +1,29 @@
+-# encoding: utf-8
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    title = yield(:title) || "asdCode"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  body
+    - if admin?
+      == render 'layouts/admin'
+    - else
+      == render 'layouts/common'
+    /p#dbg
+    /  = request.params if Rails.env.development?
+    /  /= raise
+    /footer.footer.navbar-bottom
+    /  .navbar.navbar-inverse
+    /    .container
+    /      = "© 2011-#{Date.today.year} asdCode"
+
+    footer.footer
+      .container
+        p
+          = "© 2011-#{Date.today.year} asdCode"

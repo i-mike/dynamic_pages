@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      page: Page
+    attributes:
+      page:
+        slug: Slug
+        priority: Priority
+        enabled: Enabled
+        parent: Parent

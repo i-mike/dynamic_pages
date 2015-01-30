@@ -1,0 +1,17 @@
+/.panel.panel-default
+/  .panel-heading
+/    = page.localized_content(params[:locale]).title
+/  .panel-body
+/    = page.localized_content(params[:locale]).body.html_safe
+
+- title page.localized_content(params[:locale]).title
+
+.row
+  .col-md-10.col-md-offset-1
+    .page
+      .page-title
+        h3
+          | AAAA
+          /= page.localized_content(params[:locale]).title
+      .page-content
+        /= page.localized_content(params[:locale]).body.html_safe

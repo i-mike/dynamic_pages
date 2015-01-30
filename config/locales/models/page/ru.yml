@@ -1,0 +1,10 @@
+ru:
+  activerecord:
+    models:
+      page: Страница
+    attributes:
+      page:
+        slug: Ссылка
+        priority: Приоритет
+        enabled: Активна
+        parent: Родитель

@@ -1,0 +1,10 @@
+ru:
+  page:
+    add_page: Добавить страницу
+    add_subpage: Добавить подстраницу
+    new_page: Добавить страницу
+    edit_page: Редакировать страницу
+
+    # Page content
+    add_localization: Добавить локализацию
+    edit_localization: Редакировать локализацию

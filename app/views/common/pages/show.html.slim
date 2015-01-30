@@ -1,0 +1,20 @@
+- present @page, Common::PagePresenter do |page_presenter|
+  .page-nav.navbar.navbar-default.navbar-inverse
+    .container-fluid
+      .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        = page_presenter.first_level_pages_selector(@pages[0], @active_pages)
+
+
+  .container-fluid
+    ul.nav.nav-pills
+      = page_presenter.second_level_pages_selector(@pages[1], @active_pages)
+
+  .container
+    .row
+      .col-md-10.col-md-offset-1
+        .page
+          /.page-title
+          /  h3 = @page.localized_title
+          .page-content
+            = @page.localized_body.html_safe

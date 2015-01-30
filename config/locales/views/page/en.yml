@@ -1,0 +1,10 @@
+en:
+  page:
+    add_page: Add page
+    add_subpage: Add subpage
+    new_page: New page
+    edit_page: Edit page
+
+    # Page content
+    add_localization: Add localization
+    edit_localization: Edit localization

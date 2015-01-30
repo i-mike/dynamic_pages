@@ -1,0 +1,8 @@
+ru:
+  activerecord:
+    models:
+      language: Язык
+    attributes:
+      language:
+        slug: Ссылка
+        name: Название

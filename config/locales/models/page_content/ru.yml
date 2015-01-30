@@ -1,0 +1,10 @@
+ru:
+  activerecord:
+    models:
+      page_content: Локализация страницы
+    attributes:
+      page_content:
+        title: Название
+        body: Текст
+        language: Язык
+        page: Страница

@@ -1,0 +1,25 @@
+.panel.panel-default
+  .panel-body
+    .row
+      .col-md-12
+        table.table
+          tbody
+            tr
+              td
+                strong = t("activerecord.models.page")
+              td
+                = link_to @page_content.page.slug, @page_content.page
+            tr
+              td
+                strong = t("activerecord.models.language")
+              td
+                = @page_content.language.name
+            tr
+              td
+                strong = t("activerecord.attributes.page_content.title")
+              td
+                = @page_content.title
+
+    .page-menu
+      = link_to t("edit"), edit_admin_page_page_content_path(@page_content.page, @page_content), class: "btn btn-primary"
+      = link_to t("show"), page_path(@page_content.page), class: "btn btn-primary"

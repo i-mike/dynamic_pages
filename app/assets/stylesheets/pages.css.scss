@@ -1,0 +1,39 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.page-menu {
+  a {
+    margin: 0 3px;
+  }
+}
+
+.node-invalid {
+  color: gray;
+  font-style: italic;
+}
+
+.page-select {
+  width: 570px;
+}
+
+.page-select-item {
+  white-space: pre;
+}
+
+.page {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.page-title {
+  text-align: center;
+  h3 {
+    color: #000000;
+  }
+
+}
+
+.page-content {
+
+}

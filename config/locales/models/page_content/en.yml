@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      page_content: Page localization
+    attributes:
+      page_content:
+        title: Title
+        body: Body
+        language: Language
+        page: Parent
